@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="3644" started-at="2020-05-10T13:07:52 IST" finished-at="2020-05-10T13:07:55 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="3644" started-at="2020-05-10T13:07:52 IST" finished-at="2020-05-10T13:07:55 IST">
+      <class name="com.clearcode.testsuite.TestSuite2">
+        <test-method status="PASS" signature="launch()[pri:0, instance:com.clearcode.testsuite.TestSuite2@5e853265]" name="launch" is-config="true" duration-ms="3513" started-at="2020-05-10T13:07:52 IST" finished-at="2020-05-10T13:07:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method status="PASS" signature="test3()[pri:0, instance:com.clearcode.testsuite.TestSuite2@5e853265]" name="test3" duration-ms="6" started-at="2020-05-10T13:07:55 IST" finished-at="2020-05-10T13:07:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.clearcode.testsuite.TestSuite2@5e853265]" name="close" is-config="true" duration-ms="87" started-at="2020-05-10T13:07:55 IST" finished-at="2020-05-10T13:07:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.clearcode.testsuite.TestSuite2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
