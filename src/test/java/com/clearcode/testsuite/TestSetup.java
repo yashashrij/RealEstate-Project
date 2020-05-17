@@ -18,26 +18,26 @@ public class TestSetup {
 	{
         System.setProperty("atu.reporter.config", "src/test/resources/atu.properties");
     }
-	WebDriverUtils driver = new WebDriverUtils();
+	WebDriverUtils wdu = new WebDriverUtils();
 	@BeforeClass
 	public void launch() {
-		driver.initialize();
+		wdu.initialize();
 	}
 	
 	@BeforeMethod
 	public void loadUrl() {
-		driver.launchUrl();
+		wdu.launchUrl();
 	}
 	
 	@AfterClass
 	public void close() {
-		driver.exit();
+		//wdu.exit();
 	}
 	
 //	@AfterSuite
 //	public void openReport() {
 //		String loc = System.getProperty("user.dir");
-//		driver.initialize();
-//		driver.navigate("file:///"+loc+"/ATU%20Reporter/index.html");
+//		wdu.initialize();
+//		wdu.navigate("file:///"+loc+"/ATU%20Reporter/index.html");
 //	}
 }

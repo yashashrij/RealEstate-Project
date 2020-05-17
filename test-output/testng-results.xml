@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
     <line>
       <![CDATA[STEP1]]>
@@ -22,20 +22,26 @@
     <line>
       <![CDATA[STEP7]]>
     </line>
+    <line>
+      <![CDATA[STEP8]]>
+    </line>
+    <line>
+      <![CDATA[STEP9]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9635" started-at="2020-05-16T18:38:10 IST" finished-at="2020-05-16T18:38:19 IST">
+  <suite name="Default suite" duration-ms="17860" started-at="2020-05-17T17:10:51 IST" finished-at="2020-05-17T17:11:09 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9635" started-at="2020-05-16T18:38:10 IST" finished-at="2020-05-16T18:38:19 IST">
+    <test name="Default test" duration-ms="17860" started-at="2020-05-17T17:10:51 IST" finished-at="2020-05-17T17:11:09 IST">
       <class name="com.clearcode.testsuite.TestSuite1">
-        <test-method status="PASS" signature="launch()[pri:0, instance:com.clearcode.testsuite.TestSuite1@64729b1e]" name="launch" is-config="true" duration-ms="2570" started-at="2020-05-16T18:38:10 IST" finished-at="2020-05-16T18:38:12 IST">
+        <test-method status="PASS" signature="launch()[pri:0, instance:com.clearcode.testsuite.TestSuite1@64729b1e]" name="launch" is-config="true" duration-ms="2828" started-at="2020-05-17T17:10:51 IST" finished-at="2020-05-17T17:10:54 IST">
           <reporter-output>
             <line>
               <![CDATA[STEP1]]>
             </line>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method status="PASS" signature="loadUrl()[pri:0, instance:com.clearcode.testsuite.TestSuite1@64729b1e]" name="loadUrl" is-config="true" duration-ms="4199" started-at="2020-05-16T18:38:12 IST" finished-at="2020-05-16T18:38:16 IST">
+        <test-method status="PASS" signature="loadUrl()[pri:0, instance:com.clearcode.testsuite.TestSuite1@64729b1e]" name="loadUrl" is-config="true" duration-ms="4425" started-at="2020-05-17T17:10:54 IST" finished-at="2020-05-17T17:10:58 IST">
           <reporter-output>
             <line>
               <![CDATA[STEP2]]>
@@ -45,32 +51,30 @@
             </line>
           </reporter-output>
         </test-method> <!-- loadUrl -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:com.clearcode.testsuite.TestSuite1@64729b1e]" name="test1" duration-ms="568" started-at="2020-05-16T18:38:16 IST" finished-at="2020-05-16T18:38:17 IST">
+        <test-method status="PASS" signature="createPatient()[pri:1, instance:com.clearcode.testsuite.TestSuite1@64729b1e]" name="createPatient" duration-ms="10580" started-at="2020-05-17T17:10:58 IST" finished-at="2020-05-17T17:11:09 IST">
           <reporter-output>
             <line>
               <![CDATA[STEP4]]>
             </line>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="loadUrl()[pri:0, instance:com.clearcode.testsuite.TestSuite1@64729b1e]" name="loadUrl" is-config="true" duration-ms="1714" started-at="2020-05-16T18:38:17 IST" finished-at="2020-05-16T18:38:19 IST">
-          <reporter-output>
             <line>
               <![CDATA[STEP5]]>
             </line>
             <line>
               <![CDATA[STEP6]]>
             </line>
-          </reporter-output>
-        </test-method> <!-- loadUrl -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:com.clearcode.testsuite.TestSuite1@64729b1e]" name="test2" duration-ms="6" started-at="2020-05-16T18:38:19 IST" finished-at="2020-05-16T18:38:19 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="close()[pri:0, instance:com.clearcode.testsuite.TestSuite1@64729b1e]" name="close" is-config="true" duration-ms="546" started-at="2020-05-16T18:38:19 IST" finished-at="2020-05-16T18:38:19 IST">
-          <reporter-output>
             <line>
               <![CDATA[STEP7]]>
             </line>
+            <line>
+              <![CDATA[STEP8]]>
+            </line>
+            <line>
+              <![CDATA[STEP9]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createPatient -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.clearcode.testsuite.TestSuite1@64729b1e]" name="close" is-config="true" duration-ms="0" started-at="2020-05-17T17:11:09 IST" finished-at="2020-05-17T17:11:09 IST">
+          <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
       </class> <!-- com.clearcode.testsuite.TestSuite1 -->

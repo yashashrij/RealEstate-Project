@@ -6,9 +6,9 @@
       <class name="com.clearcode.testsuite.TestSuite1">
         <methods>
           <include name="launch"/>
+          <include name="createPatient"/>
           <include name="close"/>
           <include name="loadUrl"/>
-          <include name="test1"/>
         </methods>
       </class> <!-- com.clearcode.testsuite.TestSuite1 -->
     </classes>
