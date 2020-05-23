@@ -1,20 +1,23 @@
 package com.clearcode.testsuite;
 
-import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
 import com.clearcode.po.HomePage;
+import com.clearcode.po.MenuBar;
+import com.clearcode.po.PatientPage;
+
+import dataProvider.LoginData;
 
 public class TestSuite1 extends TestSetup{
 
-	@Test(priority=1)
-	public void createPatient() throws InterruptedException {
-		wdu.type(HomePage.username_ip, "admin");
-		wdu.type(HomePage.pwd_ip, "pass");
+	@Test(priority=1,dataProvider="negativeLogin",dataProviderClass=LoginData.class)
+	public void createPatient(String desc, String user, String pwd) throws InterruptedException {
+		wdu.type(HomePage.username_ip, user);
+		wdu.type(HomePage.pwd_ip, pwd);
 		wdu.click(HomePage.login_btn);
-		wdu.mouseOver(By.xpath("//div[text()='Patient/Client']"));
-		wdu.click(By.xpath("//div[text()='New/Search']"));
-		wdu.selectByVisibleText(By.id("form_title"), "Mr.");
+//		wdu.mouseOver(MenuBar.patient_menu);
+//		wdu.click(MenuBar.newPatient_menu);
+//		wdu.selectByVisibleText(PatientPage.title_select, "Mr.");
 	}
 	
 	@Test(enabled=false)
