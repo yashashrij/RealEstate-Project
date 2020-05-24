@@ -9,4 +9,14 @@ public class LoginData {
 	public Object[][] negativeLogin(){
 		return ExcelUtils.getData("TestData.xls", "NegativeLogin");
 	}
+	
+	@DataProvider
+	public Object[][] CreatePatient(){
+		return new Object[][] { ExcelUtils.data("SuiteData.xls", "Sheet1", "createPatient").toArray() };
+	}
+	
+	@DataProvider
+	public Object[][] SearchPatient(){
+		return new Object[][] { ExcelUtils.data("SuiteData.xls", "Sheet1", "searchPatient").toArray() };
+	}
 }
