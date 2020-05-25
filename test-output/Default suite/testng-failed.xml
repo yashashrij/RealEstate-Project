@@ -6,7 +6,7 @@
       <class name="com.clearcode.testsuite.TestSuite1">
         <methods>
           <include name="launch"/>
-          <include name="createPatient"/>
+          <include name="createPatient" invocation-numbers="0"/>
           <include name="close"/>
           <include name="loadUrl"/>
         </methods>

@@ -2,6 +2,7 @@ package com.clearcode.testsuite;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 
 import com.clearcode.po.HomePage;
 import com.clearcode.po.MenuBar;
@@ -25,7 +26,7 @@ public class TestSuite1 extends TestSetup{
 	}
 	
 	@Test(enabled=false,dataProvider="SearchPatient",dataProviderClass=LoginData.class)
-	public void searchPatient(String user, String pwd, String title, String fname, String lname) {
+	public void searchPatient(String user, String pwd, String title, String fname, String lname) throws InterruptedException {
 		wdu.type(HomePage.username_ip, user);
 		wdu.type(HomePage.pwd_ip, pwd);
 		wdu.click(HomePage.login_btn);
@@ -34,6 +35,7 @@ public class TestSuite1 extends TestSetup{
 		wdu.selectByVisibleText(PatientPage.title_select, title);
 		wdu.type(PatientPage.fname_ip, fname);
 		wdu.type(PatientPage.lname_ip, lname);
+		String a = "Hello"
 	}
 	
 }
