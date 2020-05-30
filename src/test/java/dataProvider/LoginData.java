@@ -12,7 +12,10 @@ public class LoginData {
 	
 	@DataProvider
 	public Object[][] CreatePatient(){
-		return new Object[][] { ExcelUtils.data("SuiteData.xls", "Sheet1", "createPatient").toArray() };
+		return new Object[][] { 
+			new Object[] {
+			ExcelUtils.data("SuiteData.xls", "Sheet1", "createPatient").toArray() }
+			};
 	}
 	
 	@DataProvider

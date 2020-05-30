@@ -129,30 +129,29 @@
                   </a> <!-- createPatient(admin, pass, Mr., Natarajan, Ramanathan) -->
                   <span class="method-name">createPatient</span>
                   <span class="parameters">(admin, pass, Mr., Natarajan, Ramanathan)</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
-  (Session info: chrome=81.0.4044.138)
+                  <div class="stack-trace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : }
+  (Session info: chrome=81.0.4044.138): 
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;Natarajans-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:1884:704a:f3bc:fd15%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.4&apos;, java.version: &apos;1.8.0_221&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: /var/folders/3h/cbnyx6rs07v...}, goog:chromeOptions: {debuggerAddress: localhost:63066}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 12718514696c5de4e990bd7de68cfd62
-*** Element info: {Using=id, value=form_title}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: /var/folders/3h/cbnyx6rs07v...}, goog:chromeOptions: {debuggerAddress: localhost:59157}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 59024ca02f47a52f06650eec3356b9cb
+*** Element info: {Using=tag name, value=frame}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementsById(RemoteWebDriver.java:376)
-	at org.openqa.selenium.By$ById.findElements(By.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByTagName(RemoteWebDriver.java:400)
+	at org.openqa.selenium.By$ByTagName.findElements(By.java:312)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
-	at com.clearcode.utils.WebDriverUtils.find(WebDriverUtils.java:227)
+	at com.clearcode.utils.WebDriverUtils.find(WebDriverUtils.java:214)
 	at com.clearcode.utils.WebDriverUtils.selectByVisibleText(WebDriverUtils.java:128)
-	at com.clearcode.testsuite.TestSuite1.createPatient(TestSuite1.java:21)
+	at com.clearcode.testsuite.TestSuite1.createPatient(TestSuite1.java:22)
 	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at com.clearcode.runner.TestNGRunner.main(TestNGRunner.java:28)
-... Removed 28 stack frames
+	at com.clearcode.runner.TestNGRunner.main(TestNGRunner.java:33)
+... Removed 24 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -169,7 +168,11 @@ Session ID: 12718514696c5de4e990bd7de68cfd62
 &lt;suite name=&quot;Suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.clearcode.testsuite.TestSuite1&quot;/&gt;
+      &lt;class name=&quot;com.clearcode.testsuite.TestSuite1&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;createPatient&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.clearcode.testsuite.TestSuite1 --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -213,12 +216,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'createPatient')
 data.setCell(0, 2, 'com.clearcode.testsuite.TestSuite1')
-data.setCell(0, 3, 92644);
+data.setCell(0, 3, 18177);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 18 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -268,17 +271,17 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">loadUrl</span>
-                <span class="method-start">4785 ms</span>
+                <span class="method-start">3202 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">createPatient(admin, pass, Mr., Natarajan, Ramanathan)</span>
-                <span class="method-start">11984 ms</span>
+                <span class="method-start">7768 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">close</span>
-                <span class="method-start">104658 ms</span>
+                <span class="method-start">25947 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

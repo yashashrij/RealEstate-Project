@@ -26,19 +26,19 @@
       <![CDATA[STEP8]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="104682" started-at="2020-05-24T17:56:31 IST" finished-at="2020-05-24T17:58:15 IST">
+  <suite name="Suite" duration-ms="25965" started-at="2020-05-25T12:42:20 IST" finished-at="2020-05-25T12:42:46 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="104682" started-at="2020-05-24T17:56:31 IST" finished-at="2020-05-24T17:58:15 IST">
+    <test name="Test" duration-ms="25965" started-at="2020-05-25T12:42:20 IST" finished-at="2020-05-25T12:42:46 IST">
       <class name="com.clearcode.testsuite.TestSuite1">
-        <test-method status="PASS" signature="launch()[pri:0, instance:com.clearcode.testsuite.TestSuite1@6b2fad11]" name="launch" is-config="true" duration-ms="4528" started-at="2020-05-24T17:56:31 IST" finished-at="2020-05-24T17:56:35 IST">
+        <test-method status="PASS" signature="launch()[pri:0, instance:com.clearcode.testsuite.TestSuite1@6b2fad11]" name="launch" is-config="true" duration-ms="2945" started-at="2020-05-25T12:42:20 IST" finished-at="2020-05-25T12:42:23 IST">
           <reporter-output>
             <line>
               <![CDATA[STEP1]]>
             </line>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method status="PASS" signature="loadUrl()[pri:0, instance:com.clearcode.testsuite.TestSuite1@6b2fad11]" name="loadUrl" is-config="true" duration-ms="7198" started-at="2020-05-24T17:56:35 IST" finished-at="2020-05-24T17:56:43 IST">
+        <test-method status="PASS" signature="loadUrl()[pri:0, instance:com.clearcode.testsuite.TestSuite1@6b2fad11]" name="loadUrl" is-config="true" duration-ms="4565" started-at="2020-05-25T12:42:23 IST" finished-at="2020-05-25T12:42:28 IST">
           <reporter-output>
             <line>
               <![CDATA[STEP2]]>
@@ -48,7 +48,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- loadUrl -->
-        <test-method status="FAIL" signature="createPatient(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.clearcode.testsuite.TestSuite1@6b2fad11]" name="createPatient" duration-ms="92644" started-at="2020-05-24T17:56:43 IST" data-provider="CreatePatient" finished-at="2020-05-24T17:58:15 IST">
+        <test-method status="FAIL" signature="createPatient(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.clearcode.testsuite.TestSuite1@6b2fad11]" name="createPatient" duration-ms="18177" started-at="2020-05-25T12:42:28 IST" data-provider="CreatePatient" finished-at="2020-05-25T12:42:46 IST">
           <params>
             <param index="0">
               <value>
@@ -76,43 +76,38 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.WebDriverException">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
             <message>
-              <![CDATA[disconnected: not connected to DevTools
-  (Session info: chrome=81.0.4044.138)
+              <![CDATA[unexpected alert open: {Alert text : }
+  (Session info: chrome=81.0.4044.138): 
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'Natarajans-MacBook-Pro.local', ip: 'fe80:0:0:0:1884:704a:f3bc:fd15%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.4', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: /var/folders/3h/cbnyx6rs07v...}, goog:chromeOptions: {debuggerAddress: localhost:63066}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 12718514696c5de4e990bd7de68cfd62
-*** Element info: {Using=id, value=form_title}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: /var/folders/3h/cbnyx6rs07v...}, goog:chromeOptions: {debuggerAddress: localhost:59157}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 59024ca02f47a52f06650eec3356b9cb
+*** Element info: {Using=tag name, value=frame}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
-  (Session info: chrome=81.0.4044.138)
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : }
+  (Session info: chrome=81.0.4044.138): 
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'Natarajans-MacBook-Pro.local', ip: 'fe80:0:0:0:1884:704a:f3bc:fd15%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.4', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: /var/folders/3h/cbnyx6rs07v...}, goog:chromeOptions: {debuggerAddress: localhost:63066}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 12718514696c5de4e990bd7de68cfd62
-*** Element info: {Using=id, value=form_title}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: /var/folders/3h/cbnyx6rs07v...}, goog:chromeOptions: {debuggerAddress: localhost:59157}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 59024ca02f47a52f06650eec3356b9cb
+*** Element info: {Using=tag name, value=frame}
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementsById(RemoteWebDriver.java:376)
-at org.openqa.selenium.By$ById.findElements(By.java:180)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementsByTagName(RemoteWebDriver.java:400)
+at org.openqa.selenium.By$ByTagName.findElements(By.java:312)
 at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
-at com.clearcode.utils.WebDriverUtils.find(WebDriverUtils.java:227)
+at com.clearcode.utils.WebDriverUtils.find(WebDriverUtils.java:214)
 at com.clearcode.utils.WebDriverUtils.selectByVisibleText(WebDriverUtils.java:128)
-at com.clearcode.testsuite.TestSuite1.createPatient(TestSuite1.java:21)
+at com.clearcode.testsuite.TestSuite1.createPatient(TestSuite1.java:22)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -138,10 +133,10 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
 at org.testng.TestNG.runSuites(TestNG.java:1032)
 at org.testng.TestNG.run(TestNG.java:1000)
-at com.clearcode.runner.TestNGRunner.main(TestNGRunner.java:28)
+at com.clearcode.runner.TestNGRunner.main(TestNGRunner.java:33)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
           <reporter-output>
             <line>
               <![CDATA[STEP4]]>
@@ -160,7 +155,7 @@ at com.clearcode.runner.TestNGRunner.main(TestNGRunner.java:28)
             </line>
           </reporter-output>
         </test-method> <!-- createPatient -->
-        <test-method status="PASS" signature="close()[pri:0, instance:com.clearcode.testsuite.TestSuite1@6b2fad11]" name="close" is-config="true" duration-ms="6" started-at="2020-05-24T17:58:15 IST" finished-at="2020-05-24T17:58:15 IST">
+        <test-method status="PASS" signature="close()[pri:0, instance:com.clearcode.testsuite.TestSuite1@6b2fad11]" name="close" is-config="true" duration-ms="2" started-at="2020-05-25T12:42:46 IST" finished-at="2020-05-25T12:42:46 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->

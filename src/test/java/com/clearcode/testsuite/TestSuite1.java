@@ -13,15 +13,15 @@ import dataProvider.LoginData;
 public class TestSuite1 extends TestSetup{
 
 	@Test(priority=1,dataProvider="CreatePatient",dataProviderClass=LoginData.class)
-	public void createPatient(String user, String pwd, String title, String fname, String lname) throws InterruptedException {
-		wdu.type(HomePage.username_ip, user);
-		wdu.type(HomePage.pwd_ip, pwd);
+	public void createPatient(String[] data) throws InterruptedException {
+		wdu.type(HomePage.username_ip, data[0]);
+		wdu.type(HomePage.pwd_ip, data[1]);
 		wdu.click(HomePage.login_btn);
 		wdu.mouseOver(MenuBar.patient_menu);
 		wdu.click(MenuBar.newPatient_menu);
-		wdu.selectByVisibleText(PatientPage.title_select, title);
-		wdu.type(PatientPage.fname_ip, fname);
-		wdu.type(PatientPage.lname_ip, lname);
+		wdu.selectByVisibleText(PatientPage.title_select, data[2]);
+		wdu.type(PatientPage.fname_ip, data[3]);
+		wdu.type(PatientPage.lname_ip, data[4]);
 		
 	}
 	
@@ -35,7 +35,6 @@ public class TestSuite1 extends TestSetup{
 		wdu.selectByVisibleText(PatientPage.title_select, title);
 		wdu.type(PatientPage.fname_ip, fname);
 		wdu.type(PatientPage.lname_ip, lname);
-		String a = "Hello"
 	}
 	
 }
