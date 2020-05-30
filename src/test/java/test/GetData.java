@@ -15,7 +15,7 @@ public class GetData {
 			}
 			System.out.println();
 		}
-		Object[][] b = {{"Hello"}};
+		Object[][] b = {{"admin"}};
 		System.out.println(a.equals(b));
 	}
 
