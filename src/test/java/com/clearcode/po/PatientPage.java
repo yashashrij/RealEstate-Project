@@ -7,6 +7,6 @@ public class PatientPage {
 	public static By fname_ip = By.id("form_fname");
 	public static By lname_ip = By.id("form_lname");
 	//Hi2
-	//Hi2
+	//Hi22
 	//Hi5
 }
