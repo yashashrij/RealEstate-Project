@@ -1,10 +1,10 @@
 package dataProvider;
-
 import org.testng.annotations.DataProvider;
-
 import com.clearcode.utils.ExcelUtils;
 
+
 public class LoginData {
+	int a=20;
 	@DataProvider
 	public Object[][] negativeLogin(){
 		return ExcelUtils.getData("TestData.xls", "NegativeLogin");
