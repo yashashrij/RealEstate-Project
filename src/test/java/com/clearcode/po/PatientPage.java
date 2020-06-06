@@ -8,5 +8,5 @@ public class PatientPage {
 	public static By lname_ip = By.id("form_lname");
 	//Hi2
 	//Hi2
-	//Hi3
+	//Hi5
 }
