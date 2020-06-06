@@ -12,7 +12,7 @@ import dataProvider.LoginData;
 
 public class TestSuite1 extends TestSetup{
 
-	@Test(priority=1,dataProvider="CreatePatient",dataProviderClass=LoginData.class)
+	@Test(enabled=false,priority=1,dataProvider="CreatePatient",dataProviderClass=LoginData.class)
 	public void createPatient(String[] data) throws InterruptedException {
 		wdu.type(HomePage.username_ip, data[0]);
 		wdu.type(HomePage.pwd_ip, data[1]);
@@ -25,7 +25,7 @@ public class TestSuite1 extends TestSetup{
 		
 	}
 	
-	@Test(enabled=false,dataProvider="SearchPatient",dataProviderClass=LoginData.class)
+	@Test(dataProvider="SearchPatient",dataProviderClass=LoginData.class)
 	public void searchPatient(String user, String pwd, String title, String fname, String lname) throws InterruptedException {
 		wdu.type(HomePage.username_ip, user);
 		wdu.type(HomePage.pwd_ip, pwd);
