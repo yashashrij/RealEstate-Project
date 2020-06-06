@@ -4,7 +4,7 @@ import com.clearcode.utils.ExcelUtils;
 
 
 public class LoginData {
-	int a=20;
+	int a=2000;
 	@DataProvider
 	public Object[][] negativeLogin(){
 		return ExcelUtils.getData("TestData.xls", "NegativeLogin");
