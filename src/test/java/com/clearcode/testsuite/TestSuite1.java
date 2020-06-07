@@ -3,6 +3,7 @@ package com.clearcode.testsuite;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 
 import com.clearcode.po.HomePage;
 import com.clearcode.po.MenuBar;
