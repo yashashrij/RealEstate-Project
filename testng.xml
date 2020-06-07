@@ -10,7 +10,7 @@
   </test>
    <test thread-count="5" name="Test2">
     <classes>
-      <class name="com.clearcode.testsuite.TestSuite1">
+      <class name="com.clearcode.testcase.TestSuite1">
       	<methods>
       		<include name="createPatient"></include>
       		<include name="searchPatient"></include>
