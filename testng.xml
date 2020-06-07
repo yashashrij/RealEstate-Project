@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test1">
     <packages>
-    	<package name="com.clearcode.testsuite">
+    	<package name="com.clearcode.testcase">
     	<include name="smoke"></include>
     	</package>
     </packages>
